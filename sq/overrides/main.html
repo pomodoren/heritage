@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% if page and page.file and page.file.name == "index" %}
+    {% include "partials/ib-home.html" %}
+  {% endif %}
+  {{ super() }}
+  <br><br>
+{% endblock %}
+  <br><br>

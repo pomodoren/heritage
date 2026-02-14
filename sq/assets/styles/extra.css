@@ -1,0 +1,97 @@
+/* ===== CHARCOAL HEADER ===== */
+.md-header__button.md-logo {
+  color: white;  /* clean white logo */
+}
+
+
+:root {
+  --ib-charcoal: #23272d;
+  --ib-accent: #b23a3a;   /* deep red */
+}
+
+/* Ensure charcoal header */
+.md-header,
+.md-tabs {
+  background-color: var(--ib-charcoal) !important;
+}
+
+/* Accent line */
+.md-header {
+  border-bottom: 4px solid var(--ib-accent) !important;
+}
+
+
+/* Top header bar */
+.md-header {
+  background-color: var(--ib-charcoal) !important;
+  background: var(--ib-charcoal) !important;
+}
+
+/* Tabs row (second bar) */
+.md-tabs {
+  background-color: var(--ib-charcoal) !important;
+}
+
+/* Make sure text/icons are readable */
+.md-header__title,
+.md-tabs__link,
+.md-header__button,
+.md-tabs__link--active {
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+
+/* Optional: subtle divider */
+.md-header {
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* --- Slider layout --- */
+.ib-wiki-slider { margin: 0.8rem 0 1.2rem; position: relative; }
+.ib-wiki-slider .swiper { padding: 0.25rem 0.25rem 1.75rem; }
+
+.ib-wiki-card {
+  height: 100%;
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 16px;
+  padding: 0.9rem 0.95rem;
+}
+
+.ib-wiki-card h4 { margin: 0 0 0.35rem; font-size: 1.02rem; }
+.ib-wiki-card p { margin: 0 0 0.75rem; opacity: 0.86; font-size: 0.92rem; }
+
+.ib-wiki-slider .swiper-button-next,
+.ib-wiki-slider .swiper-button-prev { transform: scale(0.85); }
+
+.ib-wiki-slider .swiper-pagination-bullet { opacity: 0.45; }
+.ib-wiki-slider .swiper-pagination-bullet-active { opacity: 0.9; }
+
+/* --- Badges --- */
+.ib-badges {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin: 0 0 0.55rem;
+}
+.ib-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.12rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  border: 1px solid rgba(0,0,0,0.14);
+  background: rgba(0,0,0,0.04);
+  opacity: 0.92;
+  white-space: nowrap;
+}
+.ib-badge--unesco {
+  border-color: rgba(178,58,58,0.55);
+  background: rgba(178,58,58,0.08);
+}
+.ib-wiki-card {
+  min-height: 260px;
+}
+
+.ib-wiki-card img {
+  height: 180px !important;
+}

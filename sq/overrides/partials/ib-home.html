@@ -1,0 +1,22 @@
+{% set h = config.extra.ib_heritage.homepage %}
+<section class="ib-hero">
+  <h1>{{ h.hero.header }}</h1>
+  <p class="ib-subheader">{{ h.hero.subheader }}</p>
+  <p class="ib-desc">{{ h.description }}</p>
+
+  <div class="ib-buttons">
+    {% for b in h.hero.buttons %}
+      <a href="{{ b.link | url }}" class="{{ b.class }}">{{ b.name }}</a>
+    {% endfor %}
+  </div>
+
+  <div class="ib-cta">
+    <h2>{{ h.cta.title }}</h2>
+    <p>{{ h.cta.description }}</p>
+    <ul>
+      {% for l in h.cta.links %}
+        <li><a href="{{ l.link }}">{{ l.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
